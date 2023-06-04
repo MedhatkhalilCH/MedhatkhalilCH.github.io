@@ -1,72 +1,96 @@
 /* Reset some default styles */
 html, body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Set font and background colors */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-  }
-  
-  /* Header styles */
-  header {
-    background-color: #ffffff;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  /* Hero section styles */
-  #hero {
-    background-image: url('path-to-your-background-image.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 150px 0;
-    color: #ffffff;
-  }
-  
-  #hero h1 {
-    font-size: 36px;
-    margin: 0;
-  }
-  
-  #hero p {
-    font-size: 18px;
-  }
-  
-  /* Content section styles */
-  section {
-    padding: 50px;
-  }
-  
-  section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #333;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+/* Set font and background colors */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00a8ff;
+}
+
+/* Hero section styles */
+#hero {
+  background-image: url(../images/header_3.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 150px 0;
+  color: #ffffff;
+}
+
+#hero h1 {
+  font-size: 48px;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+#hero p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Content section styles */
+section {
+  padding: 50px;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #333;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+  color: #ccc;
+}
