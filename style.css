@@ -162,7 +162,7 @@ footer p {
   background-color: #f2f2f2;
   color: #333;
   font-size: 18px;
-  border: 2px solid #ccc; /* Add border */
+  border: 2px solid #333; /* Add border */
   border-radius: 5px; /* Add border radius */
   cursor: pointer;
   transition: all 0.3s ease;
@@ -174,7 +174,7 @@ footer p {
 
 .tab-link.active {
   border-bottom: 2px solid #333;
-  background-color: #fff; /* Update background color */
+  background-color: #f8ceac; /* Update background color */
 }
 
 .tab-content {
