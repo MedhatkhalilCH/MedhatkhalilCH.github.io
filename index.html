@@ -20,9 +20,6 @@
   <section id="hero">
     <div class="hero-content">
       <h1>Welcome to Comestibles Zürich</h1>
-      <p>Comestibles Zürich is your gateway to the finest imported culinary treasures.
-        Discover an exquisite collection of gourmet delights, handpicked for discerning palates.
-      </p>
     </div>
   </section>
 
@@ -43,37 +40,50 @@
 
   <section id="products">
     <h2>Our Products</h2>
-    </br>
-    <h3>Grissini (Bread Stick) </h3>
-    <p>
-      All the Grissinis are made by hand, pulled to the edges to make them longer and thinner.
-      Leavened 3 hours before being baked, the breadsticks of Panificio Patti combine naturalness and taste. That is the way how we get the crunchy and fragrant product.
-      We have 3 types: sesame, natural and butter (with top quality butter from the Netherlands), and
-      You can have the natural and the sesame with “farina interna”- is a special flour which reduced glycemic peak by 50 % 
-    </p>
-    <div class="product">
-      <h3>Confezione grissini al sesamo</h3>
-      <img src="images/Confezione grissini al sesamo.jpg" alt="Confezione grissini al sesamo" class="product-image">
+    <div class="tabs">
+      <button class="tab-link active" onclick="openTab('grissini')">Grissini (Bread Stick)</button>
+      <button class="tab-link" onclick="openTab('sweets')">Sweets</button>
     </div>
-    <div class="product">
-      <h3>Confezione grissini al naturale</h3>
-      <img src="images/Confezione grissini al naturale.jpg" alt="Confezione grissini al naturale" class="product-image">>
+  
+    <div id="grissini" class="tab-content">
+      <h3>Grissini (Bread Stick)</h3>
+      <p>
+        All the Grissinis are made by hand, pulled to the edges to make them longer and thinner.
+        Leavened 3 hours before being baked, the breadsticks of Panificio Patti combine naturalness and taste. That is the way how we get the crunchy and fragrant product.
+        We have 3 types: sesame, natural and butter (with top quality butter from the Netherlands), and
+        You can have the natural and the sesame with “farina interna”- is a special flour which reduced glycemic peak by 50 %
+      </p>
+      <div class="product">
+        <h3>Confezione grissini al sesamo</h3>
+        <img src="images/Confezione grissini al sesamo.jpg" alt="Confezione grissini al sesamo" class="product-image">
+      </div>
+      <div class="product">
+        <h3>Confezione grissini al naturale</h3>
+        <img src="images/Confezione grissini al naturale.jpg" alt="Confezione grissini al naturale" class="product-image">
+      </div>
+      <div class="product">
+        <h3>Confezione grissini al burro</h3>
+        <img src="images/Confezione grissini al burro.jpg" alt="Confezione grissini al burro" class="product-image">
+      </div>
+      <div class="product">
+        <h3>Confezione grissini farina intera sesamo</h3>
+        <img src="images/Confezione grissini farina intera sesamo.jpg" alt="Confezione grissini farina intera sesamo" class="product-image">
+      </div>
+      <div class="product">
+        <h3>Confezione grissini farina intera</h3>
+        <img src="images/Confezione grissini farina intera.jpg" alt="Confezione grissini farina intera" class="product-image">
+      </div>
     </div>
-    <div class="product">
-      <h3>Confezione grissini al burro</h3>
-      <img src="images/Confezione grissini al burro.jpg" alt="Confezione grissini al burro" class="product-image">>
-    </div>
-    <div class="product">
-      <h3>Confezione grissini farina intera sesamo</h3>
-      <img src="images/Confezione grissini farina intera sesamo.jpg" alt="Confezione grissini farina intera sesamo" class="product-image">>
-    </div>
-    <div class="product">
-      <h3>Confezione grissini farina intera</h3>
-      <img src="images/Confezione grissini farina intera.jpg" alt="Confezione grissini farina intera" class="product-image">>
+  
+    <div id="sweets" class="tab-content" style="display: none;">
+      <h3>Sweets</h3>
+      <p>Discover our delightful selection of sweets...</p>
+      <div class="product">
+        <!-- Sweets products here -->
+      </div>
     </div>
   </section>
   
-
   <section id="contact">
     <h2>Contact Us</h2>
     <p>
@@ -86,5 +96,6 @@
   <footer>
     <p>&copy; 2023 Comestibles Zürich. All rights reserved.</p>
   </footer>
+<script src="script.js"></script>
 </body>
 </html>
