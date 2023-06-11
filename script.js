@@ -16,11 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
           content.style.display = 'none';
         });
   
-        // Deactivate all tab links
-        tabLinks.forEach(function(link) {
-          link.classList.remove('active');
-        });
-  
         // Show the selected tab content and activate the tab link
         document.getElementById(tabId).style.display = 'block';
         this.classList.add('active');
