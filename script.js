@@ -1,3 +1,5 @@
+import translations from './translations.js';
+
 document.addEventListener('DOMContentLoaded', function() {
   // Get all tab links
   var tabLinks = document.querySelectorAll('.tab-link');
@@ -58,26 +60,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Function to translate paragraphs
   function translateParagraphs(language) {
-    const translations = {
-      en: {
-        about_paragraph: `Comestibles Zürich invites you on a gastronomic journey, bringing you a curated selection of international flavors.<br>
-            Indulge in the art of fine dining with our handpicked delicacies, sourced from the world's culinary hotspots.<br><br>
-            We source our products from the world-renowned Patti bakery. Francesco Patti moved from Sicily to the Aosta Valley to learn how to become a baker.<br>
-            Then he met Andrea Cavallari, the current head of the Patti bakery, and they started a family business more than 30 years ago.<br>
-            The secret of the success of Patti products comes from a combination of various factors: the choice of genuine top-quality ingredients, passion, craftsmanship, and a dough worked by hand, with love and patience, without preservatives and chemical additives.<br>
-            Patti now has more than 50 employees and several agents, with three stores in the Biella area and a store in Milan.<br>
-            The exquisite breadsticks and pastry products (Baci di dama, Amaretti morbidi, Canestrelli canavesani, Frollini with pine nuts, Torcetti with butter and Paste di meliga) are appreciated and distributed throughout northern Italy, up to overcome the borders reaching some selected shops in Europe.<br>`,
-        },
-      de: {
-        about_paragraph: `Comestibles Zürich lädt Sie auf eine gastronomische Reise ein und bietet Ihnen eine kuratierte Auswahl an internationalen Aromen.<br>
-            Gönnen Sie sich die Kunst des feinen Essens mit unseren handverlesenen Köstlichkeiten aus den kulinarischen Hotspots der Welt.<br><br>
-            Wir beziehen unsere Produkte von der weltbekannten Bäckerei Patti. Francesco Patti zog von Sizilien ins Aostatal, um Bäcker zu werden.<br>
-            Dann lernte er Andrea Cavallari, den jetzigen Leiter der Patty-Bäckerei kennen, und sie gründeten vor mehr als 30 Jahren ein Familienunternehmen.<br>
-            Das Geheimnis des Erfolgs der Patti-Produkte liegt in einer Kombination verschiedener Faktoren: der Auswahl echter Zutaten von höchster Qualität, Leidenschaft, Handwerkskunst und einem Teig, der mit Liebe und Geduld von Hand verarbeitet wird, ohne Konservierungsstoffe und chemische Zusätze.<br>
-            Patti hat heute mehr als 50 Mitarbeiter und mehrere Agenten, mit drei Filialen in der Gegend von Biella und einer Filiale in Milan.<br>
-            Die exquisiten Grissini und Konditoreiprodukte (Baci di dama, Amaretti morbidi, Canestrelli canavesani, Frollini mit Pinienkernen, Torcetti mit Butter und Paste di meliga) werden in ganz Norditalien geschätzt und vertrieben, bis hin zu einigen ausgewählten Geschäften in Europa.<br>`,
-        },
-    };
 
     // Get all paragraph elements
     const paragraphs = document.querySelectorAll('p');
