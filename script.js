@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     paragraphs.forEach((paragraph) => {
       const id = paragraph.id;
       if (translations[language] && translations[language][id]) {
-        paragraph.textContent = translations[language][id];
+        paragraph.innerHTML = translations[language][id];
       }
     });
   }
