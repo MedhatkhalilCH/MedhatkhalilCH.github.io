@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
     translateParagraphs('de');
   });
 
-  // Set default language to English
-  setEnglish();
-  translateParagraphs('en');
+  // Set default language to German
+  setGerman();
+  translateParagraphs('de');
 });
