@@ -16,6 +16,9 @@ header {
   background-color: #ffffff;
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex; /* Add this line to make the header a flex container */
+  justify-content: space-between; /* Add this line to position the navigation and language switcher on opposite ends */
+  align-items: center; /* Add this line to vertically center the content */
 }
 
 nav ul {
@@ -38,6 +41,14 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #00a8ff;
+}
+
+#language-switcher {
+  display: flex; /* Add this line to make the language switcher a flex container */
+}
+
+#language-switcher button {
+  margin-left: 5px;
 }
 
 /* Hero section styles */
