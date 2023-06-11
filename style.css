@@ -51,6 +51,19 @@ nav ul li a:hover {
   margin-left: 5px;
 }
 
+.banner {
+  width: 100%;
+  height: 396px; /* Adjust the height as needed */
+  position: relative;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Adjust the image resizing behavior */
+}
+
+
 /* Hero section styles */
 #hero {
   background-image: url(images/Patti_Farina.jpg);
