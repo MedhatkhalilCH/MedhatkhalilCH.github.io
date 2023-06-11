@@ -28,3 +28,39 @@ document.addEventListener('DOMContentLoaded', function() {
   var defaultTabContent = document.getElementById('grissini');
   defaultTabContent.style.display = 'block';
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Get language buttons
+  var enBtn = document.getElementById('en-btn');
+  var deBtn = document.getElementById('de-btn');
+
+  // Get all elements that need language switching
+  var languageElements = document.querySelectorAll('[data-en], [data-de]');
+
+  // Function to set language to English
+  function setEnglish() {
+    languageElements.forEach(function(element) {
+      element.textContent = element.getAttribute('data-en');
+    });
+    enBtn.classList.add('active');
+    deBtn.classList.remove('active');
+  }
+
+  // Function to set language to German
+  function setGerman() {
+    languageElements.forEach(function(element) {
+      element.textContent = element.getAttribute('data-de');
+    });
+    enBtn.classList.remove('active');
+    deBtn.classList.add('active');
+  }
+
+  // Event listeners for language buttons
+  enBtn.addEventListener('click', setEnglish);
+  deBtn.addEventListener('click', setGerman);
+
+  // Set default language to English
+  setEnglish();
+});
+
