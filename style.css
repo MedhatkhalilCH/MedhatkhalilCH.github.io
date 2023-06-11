@@ -43,7 +43,7 @@ nav ul li a:hover {
 /* Hero section styles */
 #hero {
   background-image: url(images/Patti_Farina.jpg);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   text-align: center;
   padding: 150px 0;

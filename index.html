@@ -41,8 +41,8 @@
   <section id="products">
     <h2>Our Products</h2>
     <div class="tabs">
-      <button class="tab-link active" onclick="openTab('grissini')">Grissini (Bread Stick)</button>
-      <button class="tab-link" onclick="openTab('sweets')">Sweets</button>
+      <button class="tab-link active" onclick="openTab('grissini')" data-tab="grissini">Grissini (Bread Stick)</button>
+      <button class="tab-link" onclick="openTab('sweets')" data-tab="sweets">Sweets</button>
     </div>
   
     <div id="grissini" class="tab-content">
@@ -77,9 +77,13 @@
   
     <div id="sweets" class="tab-content" style="display: none;">
       <h3>Sweets</h3>
-      <p>Discover our delightful selection of sweets...</p>
+      <p>Discover our delightful selection of sweets</p>
       <div class="product">
-        <!-- Sweets products here -->
+        <h3>Torcetti</h3>
+        <img src="images/Confezione torcetti al burro.jpg" alt="Torcetti" class="product-image">
+        <p>
+          Is a butter cookie made with leftover dough from the breadsticks adding butter and sugar and than curve it.
+        </p>
       </div>
     </div>
   </section>
