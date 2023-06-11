@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
   enBtn.addEventListener('click', setEnglish);
   enBtn.addEventListener('click', translateParagraphs('en'));
   deBtn.addEventListener('click', setGerman);
-  enBtn.addEventListener('click', translateParagraphs('de'));
+  deBtn.addEventListener('click', translateParagraphs('de'));
 
   // Set default language to English
   setEnglish();
