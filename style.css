@@ -42,7 +42,7 @@ nav ul li a:hover {
 
 /* Hero section styles */
 #hero {
-  background-image: url(../images/Patti_Farina.jpg);
+  background-image: url(images/Patti_Farina.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -93,4 +93,25 @@ footer p {
   font-size: 14px;
   margin: 0;
   color: #ccc;
+}
+
+/* Add responsive styles for the product images */
+.product-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add responsive styles for the hero section */
+@media screen and (max-width: 768px) {
+  #hero {
+    background-size: contain;
+    padding: 100px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #hero {
+    background-size: auto;
+    padding: 50px 0;
+  }
 }
